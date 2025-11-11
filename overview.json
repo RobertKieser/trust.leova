@@ -1,0 +1,157 @@
+{
+  "portal_title": "Leova Trust Center",
+  "contact_email": "security@leova.com",
+  "description": "Welcome to Leova's Trust Center, where our commitment to data security and compliance is central to our operations. Leova provides an AI-powered clinical trial database configuration tool that automates EDC setup from study protocols. This Trust Center offers detailed insights into our security practices, compliance standards, and data protection measures. You can explore our certifications, request access to security documentation, and stay informed about our latest security initiatives.",
+  
+  "certifications": [
+    {
+      "name": "ISO/IEC 27001",
+      "description": "Information Security Management System",
+      "icon": "🔒"
+    },
+    {
+      "name": "SOC 2 Type II",
+      "description": "System and Organization Controls",
+      "icon": "✓"
+    },
+    {
+      "name": "GDPR Compliant",
+      "description": "General Data Protection Regulation",
+      "icon": "🇪🇺"
+    },
+    {
+      "name": "HIPAA Compliant",
+      "description": "Health Insurance Portability and Accountability Act",
+      "icon": "🏥"
+    },
+    {
+      "name": "21 CFR Part 11",
+      "description": "FDA Electronic Records",
+      "icon": "📋"
+    },
+    {
+      "name": "ICH GCP",
+      "description": "Good Clinical Practice",
+      "icon": "⚕️"
+    }
+  ],
+  
+  "trusted_by": [
+    {
+      "name": "BioInformatiCo",
+      "description": "Clinical Data Management"
+    },
+    {
+      "name": "Leading CROs",
+      "description": "Contract Research Organizations"
+    },
+    {
+      "name": "Pharma Companies",
+      "description": "Pharmaceutical Sponsors"
+    },
+    {
+      "name": "Research Institutions",
+      "description": "Academic Medical Centers"
+    }
+  ],
+  
+  "overview_sections": [
+    {
+      "id": "certifications-section",
+      "title": "Certifications",
+      "type": "certifications"
+    },
+    {
+      "id": "trusted-by-section",
+      "title": "Trusted by",
+      "type": "trusted_by"
+    },
+    {
+      "id": "documentation-preview",
+      "title": "Documentation",
+      "type": "documentation_preview",
+      "link_text": "See all documents",
+      "items": [
+        {
+          "title": "Security Overview",
+          "icon": "📄",
+          "access": "public"
+        },
+        {
+          "title": "Data Processing Agreement",
+          "icon": "📄",
+          "access": "request"
+        },
+        {
+          "title": "SOC 2 Type II Report",
+          "icon": "📄",
+          "access": "request"
+        }
+      ]
+    },
+    {
+      "id": "controls-preview",
+      "title": "Controls",
+      "type": "controls_preview",
+      "link_text": "See all controls",
+      "items": [
+        {
+          "title": "Access Control",
+          "description": "Multi-factor authentication, role-based access control, and automated access reviews ensure only authorized personnel can access systems and data.",
+          "features": [
+            "Multi-factor authentication for all users",
+            "Role-based access control (RBAC)",
+            "Automated quarterly access reviews",
+            "Just-in-time privileged access",
+            "Single sign-on (SSO) integration"
+          ]
+        },
+        {
+          "title": "Data Security",
+          "description": "Comprehensive encryption and data protection measures safeguard clinical trial data throughout its lifecycle.",
+          "features": [
+            "Encryption at rest (AES-256)",
+            "Encryption in transit (TLS 1.3)",
+            "Database encryption and key management",
+            "Secure data deletion procedures",
+            "Regular data backup and recovery testing"
+          ]
+        },
+        {
+          "title": "Infrastructure Security",
+          "description": "Cloud-based infrastructure with enterprise-grade security controls and monitoring.",
+          "features": [
+            "AWS infrastructure with ISO 27001",
+            "Network segmentation and firewalls",
+            "Intrusion detection and prevention",
+            "24/7 security monitoring",
+            "Regular vulnerability scanning and penetration testing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subprocessors-preview",
+      "title": "Subprocessors",
+      "type": "subprocessors_preview",
+      "link_text": "See all subprocessors",
+      "items": [
+        {
+          "name": "Amazon Web Services",
+          "service": "Cloud Infrastructure",
+          "location": "Europe (Ireland)"
+        },
+        {
+          "name": "Anthropic",
+          "service": "AI/ML Services",
+          "location": "United States"
+        },
+        {
+          "name": "Cloudflare",
+          "service": "CDN & Security",
+          "location": "Global"
+        }
+      ]
+    }
+  ]
+}
