@@ -1,7 +1,11 @@
 {
   "portal_title": "Leova Trust Center",
   "contact_email": "security@leova.com",
-  "description": "Welcome to Leova's Trust Center, where our commitment to data security and compliance is central to our operations. Leova provides an AI-powered clinical trial database configuration tool that automates EDC setup from study protocols. This Trust Center offers detailed insights into our security practices, compliance standards, and data protection measures. You can explore our certifications, request access to security documentation, and stay informed about our latest security initiatives.",
+  "description": [
+    "Welcome to Leova's Trust Center, where our commitment to data security and compliance is central to our operations. <a href='https://leova.com' target='_blank' rel='noopener noreferrer'>Leova</a> provides an AI-powered clinical trial database configuration tool that automates EDC setup from study protocols.",
+    "This Trust Center offers detailed insights into our security practices, including the specific controls and policies implemented by our teams. You can explore our compliance standards, request access to comprehensive security documentation, and gain a clear understanding of how we safeguard your data.",
+    "Additionally, we invite you to subscribe for updates to stay informed about the latest advancements in our security and compliance initiatives."
+  ],
   
   "certifications": [
     {

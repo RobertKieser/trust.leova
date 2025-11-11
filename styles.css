@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   background: linear-gradient(135deg, var(--color-navy-deep), var(--color-navy-medium));
   color: white;
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-lg) 0 var(--spacing-xl) 0;
   min-height: 280px;
 }
 
@@ -75,13 +75,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 0 var(--spacing-md);
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--spacing-lg);
   flex-wrap: wrap;
   gap: var(--spacing-md);
 }
@@ -90,6 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   gap: var(--spacing-md);
+  flex-wrap: wrap;
 }
 
 .logo-image {
@@ -99,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portal-title {
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   font-weight: 700;
   color: white;
   margin: 0;
@@ -107,7 +110,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-actions {
   display: flex;
-  gap: var(--spacing-sm);
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xs);
 }
 
 .btn {
@@ -148,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   text-decoration: none;
   font-size: 0.875rem;
-  margin-top: var(--spacing-sm);
+  transition: opacity 0.2s;
 }
 
 .contact-email:hover {
@@ -159,7 +170,26 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.875rem;
   line-height: 1.7;
   max-width: 83.333%;
-  margin-top: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+}
+
+.portal-description p {
+  margin-bottom: var(--spacing-sm);
+}
+
+.portal-description p:last-child {
+  margin-bottom: 0;
+}
+
+.portal-description a {
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+
+.portal-description a:hover {
+  opacity: 0.7;
 }
 
 /* Tab Navigation */
@@ -417,11 +447,25 @@ h1, h2, h3, h4, h5, h6 {
 /* Responsive */
 @media (max-width: 768px) {
   .header {
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0 var(--spacing-lg) 0;
   }
   
   .portal-title {
     font-size: 1.5rem;
+  }
+  
+  .logo-title {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .header-actions {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .contact-row {
+    justify-content: center;
   }
   
   .portal-description {

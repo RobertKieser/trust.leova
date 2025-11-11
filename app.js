@@ -29,7 +29,12 @@ class TrustPortal {
     document.getElementById('portal-title').textContent = this.data.portal_title;
     document.getElementById('email-text').textContent = this.data.contact_email;
     document.getElementById('contact-email').href = `mailto:${this.data.contact_email}`;
-    document.getElementById('portal-description').innerHTML = `<p>${this.data.description}</p>`;
+    
+    // Handle description as array of paragraphs
+    const descriptionHTML = Array.isArray(this.data.description)
+      ? this.data.description.map(para => `<p>${para}</p>`).join('')
+      : `<p>${this.data.description}</p>`;
+    document.getElementById('portal-description').innerHTML = descriptionHTML;
   }
 
   renderOverview() {
